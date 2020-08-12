@@ -16,3 +16,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('halo', function () {
+    return "Halo, Selamat datang di tutorial laravel www.malasngoding.com";
+});
+
+Route::get('blog', function () {
+    return view('blog');
+});
+
+Route::get('dosen', 'DosenController@index');
+
+Route::get('/pegawai/{nama}', 'PegawaiController@index');
+
+// Route Request Get & Post
+Route::get('/formulir', 'PegawaiController@formulir');
+Route::post('/formulir/proses', 'PegawaiController@proses');
