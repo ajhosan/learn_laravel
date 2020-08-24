@@ -8,7 +8,7 @@ class DosenController extends Controller
 {
     public function index()
     {
-        $nama = "Alex Jhosan Abdillah";
+        $nama = "Alex Jhosan OWKEO";
         $arraye = ["Korpora", "Konsulting", 2323];
         return view('biodata', ['nama2' => $nama, 'arry' => $arraye]);
     }
